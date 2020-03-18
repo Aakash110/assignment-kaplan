@@ -1,5 +1,5 @@
-<div *ngFor="let d of sortData">
-  <h5 class="date-heading">{{d.time | date:'fullDate'}}</h5>
+<div *ngFor="let d of sortData; let i = index">
+  <h5 class="date-heading">{{(d.time | date:'fullDate' | removeDuplicate:i)}}</h5>
   <div class="card w-75 card-size">
     <div class="card-body">
       <div class="row">

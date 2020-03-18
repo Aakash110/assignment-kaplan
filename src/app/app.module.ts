@@ -6,11 +6,13 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ChannelComponent } from './channel/channel.component';
+import { RemoveDuplicatePipe } from './remove-duplicate.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ChannelComponent
+    ChannelComponent,
+    RemoveDuplicatePipe
   ],
   imports: [
     BrowserModule,
